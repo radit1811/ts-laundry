@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+.why-us {
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 800px;
+  min-height: 835px;
+  margin: auto;
+}
+h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #333;
+}
+.benefits {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.benefit:hover {
+  background-color: rgba(255, 166, 0, 0.934);
+  transition: all 0.3s ease;
+  color: white;
+  transform: scale(1.05);
+}
+
+.benefit {
+  flex: 1 1 calc(33% - 20px);
+  background-color: orange;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.benefit h2 {
+  color: #333;
+}
+
+.benefit p {
+  font-size: 18px;
+  color: #333;
+}
+
+.benefit:hover h2,
+.benefit:hover p,
+.benefit:hover i {
+  color: white;
+  transition: 0.3s;
+}
+
+.benefit i {
+  font-size: 20px;
+  color: #333;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TS Laundry</title>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/faq.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo"><a href="../"> TS Laundry</a></div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="../">About</a></li>
+        <li><a href="../">Reviews</a></li>
+        <li><a href="../" target="blank_">Contact</a></li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <div class="wrapper">
+      <p>Pertanyaan yang sering di Pertanyakan</p>
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq">
+        <button class="accordion">
+          Apa perbedaan Express dan Reguler ya?
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="panel">
+          <p>
+            Perbedaanya hanya di bagian kapan penyucian itu selesai <br /><b
+              >Reguler memakan waktu 3 Hari</b
+            ><br /><b>Express memakan waktu 2 atau 1 Hari</b> ( ada 2 jenis )
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          Berapa lama Estimasi pengerjaan Express ya?
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="panel">
+          <p>
+            Pengerjaan Express hanya memerlukan <b>2 Hari</b> saja paling lama,
+            sesuai namanya laundry express👍
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          Apakah di TS Laundry terjamin aman?
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="panel">
+          <p>
+            Pastinya sangat <b>Terjamin 100%</b> barang tidak akan hilang,
+            tertukar, ataupun rusak. <br />seandainya hal itu terjadi, dari
+            pihak TS Laundry akan membayar ganti rugi
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          Apakah di atas jam 9 malam bisa menaruh cucian?
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="panel">
+          <p>
+            Kita selalu menerima cucian di atas jam 9 malam,
+            <b>kecuali di atas jam 12 malam.👌 </b>
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          Metode Pembayaran apa saja?
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="panel">
+          <p>
+            Untuk saat ini, hanya terdapat metode pembayaran
+            <b>Cash dan Transfer Bank.</b>
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          Apa yang terjadi jika saya meninggalkan barang-barang pribadi di saku
+          saya?
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="panel">
+          <p>
+            Kami biasanya memeriksanya pada saat pengambilan, namun jika kami
+            melewatkan sesuatu,<br />
+            kami akan menyimpannya dan menghubungi Anda untuk memberi tahu.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2024 TS Laundry. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+      const acc = document.getElementsByClassName("accordion");
+      var i;
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("actives");
+          this.parentElement.classList.toggle("actives");
+
+          var panel = this.nextElementSibling;
+
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
